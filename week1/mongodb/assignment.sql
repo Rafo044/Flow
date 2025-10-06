@@ -89,15 +89,3 @@ db.patient.deleteMany({"history.disease": "cold"})
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
