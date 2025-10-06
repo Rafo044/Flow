@@ -1,0 +1,47 @@
+# --- Text files (normalize line endings to LF)
+*.js text eol=lf
+*.json text eol=lf
+*.ts text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.env text eol=lf
+*.md text eol=lf
+*.txt text eol=lf
+
+# --- MongoDB specific
+*.mongo text eol=lf linguist-language=JavaScript
+*.bson binary
+*.mongorc.js text eol=lf linguist-language=JavaScript
+*.mongodb text eol=lf linguist-language=JavaScript
+
+# --- Ignore diffs for large binary data dumps
+*.dump binary
+*.bak binary
+*.gz binary
+*.zip binary
+*.tar binary
+
+# --- Prevent Git from messing with example data
+data/*.bson binary
+backups/* binary
+
+# --- Treat Docker and Compose files as text
+Dockerfile text eol=lf linguist-language=Dockerfile
+*.dockerfile text eol=lf linguist-language=Dockerfile
+docker-compose*.yml text eol=lf
+
+# --- Handle scripts as text
+scripts/* text eol=lf
+
+# --- Ensure consistent formatting for configs
+*.conf text eol=lf
+*.ini text eol=lf
+
+# --- Mark JSON schema as JSON
+*.schema.json text eol=lf linguist-language=JSON
+
+# --- GitHub linguist overrides (optional)
+*.bson linguist-vendored
+*.dump linguist-vendored
