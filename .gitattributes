@@ -9,9 +9,9 @@
 *.env text eol=lf
 *.md text eol=lf
 *.txt text eol=lf
-
+*.sql text eol=if linguist-language=Plpgsql
 # --- MongoDB specific
-*.mongo text eol=lf linguist-language=JavaScript
+*.mongo text cJavaScript
 *.bson binary
 *.mongorc.js text eol=lf linguist-language=JavaScript
 *.mongodb text eol=lf linguist-language=JavaScript
