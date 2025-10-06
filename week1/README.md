@@ -16,9 +16,7 @@ db.patient.insertOne({"firstname": "Max" ,
 			 		 "age": 29,
 			 		 "history": 
 			 		 [{"disease": "cold"},
-			 		 {"treatement": "test"}]})
-			  
-			  
+			 		 {"treatement": "test"}]})		  
 			  
 -- Data view
 
@@ -34,8 +32,6 @@ db.patient.insertOne({"firstname": "Lora",
 						"lastname": "Martinez",
 						"history": [
 						{"treatment": "test"}]})
-
-
 
 db.patient.insertOne({"firstname": "Filipp",
 						"lastname": "Colons",
@@ -59,8 +55,6 @@ db.patient.insertMany([{"firstname": "Jeck",
 						
 						
 						])
-						
-
 						
 /*----------------------------------------------------------------------------*/
 
@@ -89,23 +83,6 @@ db.patient.find({"age": { $gte: 20}})
 /* Task 04 .  Delete all patients who got a cold as a desease */
 				
 db.patient.deleteMany({"history.disease": "cold"})			
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
